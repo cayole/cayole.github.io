@@ -14,7 +14,7 @@
     <body>
         <h1>Hello World</h1>
         <p>这是我的页面</p>
-        <strong>第一</strong><em>第二</em><em>第三</em>
+        <strong>第一</strong><em>第二</em><em><strong>第三</strong></em>
         <p>第四</p>
         <p>第五</p>
     <p>第六</p>
@@ -37,6 +37,33 @@
         </ol>
         <p>Japanese example:<span lang:"ja">ご飯が熱い。</span>.</p>
         <!--可以分段设置语言-->
+
+
+
+        <!--
+        <i> 被用来传达传统上用斜体表达的意义：外国文字，分类名称，技术术语，一种思想……
+        <b> 被用来传达传统上用粗体表达的意义：关键字，产品名称，引导句……
+        <u> 被用来传达传统上用下划线表达的意义：专有名词，拼写错误……-->
+        <!-- 学名 -->
+        <p>
+        红喉北蜂鸟（学名：<i>Archilocus colubris</i>）是北美东部最常见的蜂鸟品种。
+        </p>
+
+        <!-- 舶来词 -->
+        <p>
+        菜单上有好多舶来词汇，比如 <i lang="uk-latn">vatrushka</i>（东欧乳酪面包）、
+        <i lang="id">nasi goreng</i>（印尼炒饭）以及 
+        <i lang="fr">soupe à l'oignon</i>（法式洋葱汤）。
+        </p>
+
+        <!-- 已知的错误书写 -->
+        <p>总有一天我会改掉写<u class="spelling-error">措字</u>的毛病。</p>
+
+        <!-- 在定义中，被定义的术语 -->
+        <dl>
+        <dt>语义化 HTML</dt>
+        <dd>根据元素的<b>语义</b>意义而不是外观来使用它们。</dd>
+        </dl>
     </body>
 </html>
 
