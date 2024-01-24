@@ -64,6 +64,114 @@
         <dt>语义化 HTML</dt>
         <dd>根据元素的<b>语义</b>意义而不是外观来使用它们。</dd>
         </dl>
+        <h2 id="mailing_address">邮寄地址</h2>
+        <p>
+            要联系某位工作员，请访问我们的<a href="contacts.html">联系人页面</a>。
+        </p>
+        <p>请访问我的<a href="projects/index.html">项目主页</a>。</p>
+        <p>
+            要提供意见和建议，请将信件邮寄至<a href="#mailing_address">公司邮寄地址</a>。
+        </p>
+
+        <a
+            href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=zh-CN"
+            download="firefox-latest-64bit-installer.exe">
+            下载最新的 Firefox 中文版 - Windows(64 位)
+        </a>
+        
+        <dl>
+            <dt>内心独白</dt>
+            <dd>戏剧中，某个角色对自己的内心活动或感受进行念白
+                表演，这些台词只面向观众，而其他角色不会听到。</dd>
+        </dl>
+
+        <p>Here is a blockquote:</p>
+        <blockquote
+        cite="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/blockquote">
+        <p>
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+            <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+            an extended quotation.
+        </p>
+        </blockquote>
+
+        <p>
+            The quote element — <code>&lt;q&gt;</code> — is
+            <q cite="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/q">
+                intended for short quotations that don't require paragraph breaks.
+            </q>
+        </p>
+
+
+        <p>
+            我们使用
+            <abbr titl。e="超文本标记语言（Hyper text Markup Language）">HTML</abbr>
+            来组织网页文档
+        </p>
+
+        <p>
+            第 33 届<abbr title="夏季奥林匹克运动会">奥运会</abbr>将于 2024 年 8
+            月在法国巴黎举行。
+        </p>
+
+
+        <address>Chris Mills, Manchester, The Grim North, UK</address>
+        
+        <p>
+             咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。
+        </p>
+        <p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+
+        <!--
+            <code>：用于标记计算机通用代码。
+            <pre>：用于保留空白字符（通常用于代码块）——如果文本中使用了缩进或多余的空白，
+                浏览器将忽略它，你将不会在呈现的页面上看到它。但是，如果你将文本包含在
+                 <pre></pre> 标签中，那么空白将会以与你在文本编辑器中看到的相同的方式渲染出来。
+            <var>：用于标记具体变量名。
+            <kbd>：用于标记输入电脑的键盘（或其他类型）输入。
+            <samp>：用于标记计算机程序的输出。
+        -->
+        <pre><code>const para = document.querySelector('p');
+
+        para.onclick = function() {
+        alert('噢，噢，噢，别点我了。');
+        }</code></pre>
+
+        <p>
+        请不要使用 <code>&lt;font&gt;</code> 、
+        <code>&lt;center&gt;</code> 等表象元素。
+        </p>
+
+        <p>在上述的 JavaScript 示例中，<var>para</var> 表示一个段落元素。</p>
+
+        <p>按 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd> 选择全部内容。</p>
+
+        <pre>$ <kbd>ping mozilla.org</kbd>
+        <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+        64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+
+
+        <!-- 标准简单日期 -->
+        <time datetime="2016-01-20">20 January 2016</time>
+        <!-- 只包含年份和月份-->
+        <time datetime="2016-01">January 2016</time>
+        <!-- 只包含月份和日期 -->
+        <time datetime="01-20">20 January</time>
+        <!-- 只包含时间，小时和分钟数 -->
+        <time datetime="19:30">19:30</time>
+        <!-- 还可包含秒和毫秒 -->
+        <time datetime="19:30:01.856">19:30:01.856</time>
+        <!-- 日期和时间 -->
+        <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+        <!-- 含有时区偏移值的日期时间 -->
+        <time datetime="2016-01-20T19:30+01:00"
+        >7.30pm, 20 January 2016 is 8.30pm in France</time
+        >
+        <!-- 提及特定周 -->
+        <time datetime="2016-W04">The fourth week of 2016</time>
+
+
     </body>
 </html>
 
