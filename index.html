@@ -172,7 +172,96 @@
         <!-- 提及特定周 -->
         <time datetime="2016-W04">The fourth week of 2016</time>
 
+        <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+            alt="一只恐龙头部和躯干的骨架，它有一个巨大的头，长着锋利的牙齿。"
+            width="200px"
+            height="171px"
+            title="A T-Rex on display in the Manchester University Museum"/>
+        
+        <!--
+            注意 <figure> 里不一定要是一张图片，只要是一个这样的独立内容单元：
 
+            用简洁、易懂的方式表达意图。
+            可以置于页面线性流的某处。
+            为主要内容提供重要的补充说明。
+            <figure> 可以是几张图片、一段代码、音视频、方程、表格或别的。
+        -->
+        <figure>
+            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+            alt="一只恐龙头部和躯干的骨架，它有一个巨大的头，长着锋利的牙齿。"
+            width="200px"
+            height="171px"/>
+            <figcaption>曼彻斯特大学博物馆展出的一只霸王龙的化石</figcaption>
+        </figure>
+        
+
+        <!--
+            controls
+            用户必须能够控制视频和音频的回放功能。
+            你可以使用 controls 来包含浏览器提供的控件界面，
+            同时你也可以使用合适的 JavaScript API 创建自己的界面。
+            界面中至少要包含开始、停止以及调整音量的功能。
+            
+            <video> 标签内的内容
+            这个叫做后备内容 
+            — 当浏览器不支持 <video> 标签的时候，就会显示这段内容，
+            这使得我们能够对旧的浏览器提供回退内容。你可以添加任何后备内容，
+            在这个例子中我们提供了一个指向这个视频文件的链接，
+            从而使用户至少可以访问到这个文件，而不会局限于浏览器的支持。
+        -->
+        <video src="rabbit320.mp4" controls>
+            <p>
+                你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看
+            </p>
+        </video>
+
+
+        <!--如果当页面一加载就开始播放视频的话，
+            就不会看到 poster 属性的效果了。
+        
+            preload
+            这个属性被用来缓冲较大的文件，有 3 个值可选：
+
+            "none" ：不缓冲
+            "auto" ：页面加载后缓存媒体文件
+            "metadata" ：仅缓冲文件的元数据
+        -->
+        <video controls
+        width="400"
+        height="400"
+        autoplay
+        loop
+        muted
+        poster="poster.png">
+            <source src="rabbit320.mp4" type="video/mp4"/>
+            <source src="rabbit320.webm" type="video/webm"/>
+            <p>
+                你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看
+            </p>
+        </video>
+        
+        <audio controls>
+            <source src="viper.mp3" type="audio/mp3" />
+            <source src="viper.ogg" type="audio/ogg" />
+            <p>你的浏览器不支持 HTML5 音频，可点击<a href="viper.mp3">此链接</a>收听。</p>
+        </audio>
+
+
+        <!--
+            让字幕与 HTML 媒体一起显示，你需要做如下工作：
+
+            以 .vtt 后缀名保存文件。
+            用 <track> 标签链接 .vtt 文件， <track> 标签需放在 <audio> 
+            或 <video> 标签当中，同时需要放在所有 <source> 标签之后。
+            使用 kind 属性来指明是哪一种类型，如 subtitles、captions、descriptions。
+            然后，使用 srclang 来告诉浏览器你是用什么语言来编写的 subtitles。
+
+            <video controls>
+                <source src="example.mp4" type="video/mp4" />
+                <source src="example.webm" type="video/webm" />
+                <track kind="subtitles" src="subtitles_en.vtt" srclang="en" />
+            </video>
+        -->
     </body>
 </html>
 
