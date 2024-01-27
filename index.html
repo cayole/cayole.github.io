@@ -262,6 +262,61 @@
                 <track kind="subtitles" src="subtitles_en.vtt" srclang="en" />
             </video>
         -->
+
+
+        <!--
+            allowfullscreen
+            如果设置，<iframe>则可以通过全屏 API 设置为全屏模式。
+
+            frameborder
+        如果设置为 1，则会告诉浏览器在此框架和其他框架之间绘制边框，这是默认行为。0 删除边框。
+        不推荐这样设置，因为在 CSS 中可以更好地实现相同的效果。border: none;
+        
+        sandbox
+        该属性需要在已经支持其他 <iframe> 功能
+        （例如 IE 10 及更高版本）但稍微更现代的浏览器上才能工作，该属性可以提高安全性设置；
+        -->
+       <iframe
+        src="https://developer.mozilla.org/zh-CN/docs/Glossary"
+        width="100%"
+        height="500"
+        frameborder="0"
+        allowfullscreen
+        sandbox>
+        <!--一个允许包含在其里的代码以适当的方式执行或者用于测试，
+            但不能对其他代码库（意外或恶意）造成任何损害的容器称为沙盒-->
+            <P>
+                <a href="https://developer.mozilla.org/zh-CN/docs/Glossary">
+                    Fallback link for browsers that don't support iframes
+                </a>
+            </P>
+       </iframe> 
+       <!--如果绝对需要，你可以逐个添加权限（sandbox=""属性值内）——请参阅 sandbox 所有可用选项的参考条目。
+        其中重要的一点是，你永远不应该同时添加 allow-scripts 和 allow-same-origin 到你的 sandbox 属性中——在这种情况下，
+        嵌入式内容可以绕过阻止站点执行脚本的同源安全策略，并使用 JavaScript 完全关闭沙盒。-->
+
+        <svg 
+            version="1.1"
+            baseProfile="full"
+            width="300"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="black"/>
+            <circle cx="150" cy="100" r="90" fill="blue"/>
+        </svg>
+
+        <img
+            src="equilateral.svg"
+            alt="triangle with all three sides equal"
+            height="87px"
+            width="100px">
+        
+        <img
+            src="equilateral.png"
+            alt="triangle with equal sides"
+            srcset="equilateral.svg"/>
+
+        
     </body>
 </html>
 
