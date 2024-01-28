@@ -9,6 +9,11 @@
         <link rel="stylesheet" href="css/my-css-file.css"/>
         <script src="scripts/my-js-file.js" defer></script>
         <!--最好加上 defer 以告诉浏览器在解析完成 HTML 后再加载 JavaScript-->
+        <style>
+            .test{
+                width: 320px;
+            }
+        </style>
 
     </head>
     <body>
@@ -316,7 +321,33 @@
             alt="triangle with equal sides"
             srcset="equilateral.svg"/>
 
-        
+        <!--
+            srcset 定义了浏览器可选择的图片设置以及每个图片的大小，
+            每张图片信息的设置和前一个用逗号隔开，每个设置要写：
+
+            一个文件名（elva-fairy-480w.jpg）
+            一个空格
+            图片的固有宽度（以像素为单位）（480w）。注意，这里使用宽度描述符 w，
+            而非你可能期望的 px。图片的固有宽度 (en-US)是它的真实大小，
+            可以通过检查你电脑上的图片文件找到（例如，在 Mac 上，
+            你可以在 Finder 上选择这个图片，然后按 Cmd + I 来显示信息）。
+        -->
+        <img
+        srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"
+        size="(max-width: 600px) 480px, 800px"
+        src="elva-fairy-800w.jpg"
+        alt="Elva dressed as a fairy"/> 
+    
+        <img class="test" 
+        srcset="elva-fairy-320w.jpg, elva-fairy-480w.jpg 1.5x, elva-fairy-640.jpg 2x"
+        src="elva-fairy-640w.jpg"
+        alt="Elva dressed as a fairy"/>
+
+        <picture>
+            <source media="(max-width: 799px)" srcset="elva-fairy-480w.jpg"/>
+            <source media="(min-width: 800px)" srcset="elva-fairy-800w.jpg"/>
+            <img src="elva-fairy-800w.jpg" alt="Chris standing up holding his daughter Elva"/>        
+        </picture>
     </body>
 </html>
 
