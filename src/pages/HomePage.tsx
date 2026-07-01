@@ -57,7 +57,7 @@ export function HomePage() {
             <em>改变生活。</em>
           </h1>
           <p className="hero-intro">
-            我是 Cayole。这里存放开发手记、设计观察，以及一些无法被归档的日常片段。
+            随便写写。
           </p>
           <div className="hero-actions">
             <a className="primary-action" href="#archive">
