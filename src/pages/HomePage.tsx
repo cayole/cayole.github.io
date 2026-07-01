@@ -4,9 +4,16 @@ import { Link, useLocation } from 'react-router-dom'
 import { formatPostDate, getPosts } from '../lib/posts'
 import type { Post } from '../types'
 
+const fallbackHitokoto = '日子沿着一条线，慢慢变成文章。'
+
+type HitokotoResponse = {
+  hitokoto?: unknown
+}
+
 export function HomePage() {
   const posts: Post[] = getPosts()
   const [openPost, setOpenPost] = useState<string | null>(null)
+  const [hitokoto, setHitokoto] = useState(fallbackHitokoto)
   const location = useLocation()
 
   useEffect(() => {
@@ -15,11 +22,36 @@ export function HomePage() {
     }
   }, [location.hash])
 
+  useEffect(() => {
+    const controller = new AbortController()
+
+    async function loadHitokoto() {
+      try {
+        const response = await fetch(
+          'https://v1.hitokoto.cn/?c=d&c=i&c=k&encode=json&max_length=30',
+          { signal: controller.signal },
+        )
+
+        if (!response.ok) return
+
+        const data = await response.json() as HitokotoResponse
+        if (typeof data.hitokoto === 'string' && data.hitokoto.trim()) {
+          setHitokoto(data.hitokoto.trim())
+        }
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return
+      }
+    }
+
+    void loadHitokoto()
+    return () => controller.abort()
+  }, [])
+
   return (
     <main>
       <section className="home-hero" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow">PERSONAL FIELD NOTES · SHANGHAI</p>
+          <p className="eyebrow">PERSONAL FIELD NOTES · ZHOUSHAN</p>
           <h1 id="hero-title">
             在代码与日常之间，
             <em>记录没有快捷键的事。</em>
@@ -50,7 +82,7 @@ export function HomePage() {
       <section className="archive" id="archive" aria-labelledby="archive-title">
         <div className="archive-intro">
           <p className="eyebrow dark">RECENT NOTES · 近期记录</p>
-          <h2 id="archive-title">日子沿着一条线，慢慢变成文章。</h2>
+          <h2 id="archive-title">{hitokoto}</h2>
           <p>点击标题下方的箭头展开简介，或直接进入全文。</p>
           <span className="post-count">{String(posts.length).padStart(2, '0')} 篇记录</span>
         </div>
@@ -97,7 +129,7 @@ export function HomePage() {
       </section>
 
       <footer className="site-footer">
-        <p>一些想法需要时间，另一些只需要被写下来。</p>
+        <p></p>
         <div><span>© 2026 CAYOLE</span><a href="#top">回到顶部 ↑</a></div>
       </footer>
     </main>
