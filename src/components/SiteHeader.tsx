@@ -1,9 +1,12 @@
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
+  const isHomeActive = location.pathname === '/' && location.hash !== '#archive'
+  const isArticlesActive = location.hash === '#archive' || location.pathname.startsWith('/post/')
 
   return (
     <header className="site-header">
@@ -26,8 +29,18 @@ export function SiteHeader() {
       </button>
 
       <nav className={menuOpen ? 'site-nav is-open' : 'site-nav'} aria-label="主导航">
-        <NavLink to="/" onClick={() => setMenuOpen(false)}>首页</NavLink>
-        <Link to="/#archive" onClick={() => setMenuOpen(false)}>文章</Link>
+        <Link
+          aria-current={isHomeActive ? 'page' : undefined}
+          className={isHomeActive ? 'active' : undefined}
+          to="/"
+          onClick={() => setMenuOpen(false)}
+        >首页</Link>
+        <Link
+          aria-current={isArticlesActive ? 'page' : undefined}
+          className={isArticlesActive ? 'active' : undefined}
+          to="/#archive"
+          onClick={() => setMenuOpen(false)}
+        >文章</Link>
         <NavLink to="/tools" onClick={() => setMenuOpen(false)}>工具</NavLink>
       </nav>
     </header>

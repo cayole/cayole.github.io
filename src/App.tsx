@@ -10,8 +10,9 @@ export default function App() {
   const location = useLocation()
 
   useEffect(() => {
+    if (location.hash) return
     window.scrollTo({ top: 0, behavior: 'auto' })
-  }, [location.pathname])
+  }, [location.hash, location.pathname])
 
   return (
     <div id="top" className="app">
