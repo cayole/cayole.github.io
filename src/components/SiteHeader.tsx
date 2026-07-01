@@ -28,6 +28,7 @@ export function SiteHeader() {
       <nav className={menuOpen ? 'site-nav is-open' : 'site-nav'} aria-label="主导航">
         <NavLink to="/" onClick={() => setMenuOpen(false)}>首页</NavLink>
         <Link to="/#archive" onClick={() => setMenuOpen(false)}>文章</Link>
+        <NavLink to="/tools" onClick={() => setMenuOpen(false)}>工具</NavLink>
       </nav>
     </header>
   )

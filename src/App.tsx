@@ -4,6 +4,7 @@ import { SiteHeader } from './components/SiteHeader'
 import { HomePage } from './pages/HomePage'
 
 const PostPage = lazy(() => import('./pages/PostPage').then((module) => ({ default: module.PostPage })))
+const ToolsPage = lazy(() => import('./pages/ToolsPage').then((module) => ({ default: module.ToolsPage })))
 
 export default function App() {
   const location = useLocation()
@@ -19,6 +20,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/post/:slug" element={<PostPage />} />
+          <Route path="/tools" element={<ToolsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
