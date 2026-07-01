@@ -53,8 +53,8 @@ export function HomePage() {
         <div className="hero-copy">
           <p className="eyebrow">PERSONAL FIELD NOTES · ZHOUSHAN</p>
           <h1 id="hero-title">
-            在代码与日常之间，
-            <em>记录没有快捷键的事。</em>
+            技术
+            <em>改变生活。</em>
           </h1>
           <p className="hero-intro">
             我是 Cayole。这里存放开发手记、设计观察，以及一些无法被归档的日常片段。
@@ -129,7 +129,7 @@ export function HomePage() {
       </section>
 
       <footer className="site-footer">
-        <p></p>
+        <p>Tech otakus save the world</p>
         <div><span>© 2026 CAYOLE</span><a href="#top">回到顶部 ↑</a></div>
       </footer>
     </main>
