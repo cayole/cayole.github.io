@@ -1,94 +1,80 @@
-import { defaultPosts } from '../data/defaultPosts'
 import type { Post } from '../types'
 
-const STORAGE_KEY = 'cayole-notes.posts.v1'
+const markdownFiles = import.meta.glob('../content/posts/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>
 
 function byNewest(a: Post, b: Post) {
   return new Date(b.date).getTime() - new Date(a.date).getTime()
 }
 
-function isPost(value: unknown): value is Post {
-  if (!value || typeof value !== 'object') return false
-  const post = value as Partial<Post>
-  return (
-    typeof post.id === 'string' && post.id.length > 0 && post.id.length <= 200 &&
-    typeof post.slug === 'string' && post.slug.length > 0 && post.slug.length <= 300 &&
-    typeof post.title === 'string' && post.title.length <= 300 &&
-    typeof post.excerpt === 'string' && post.excerpt.length <= 2000 &&
-    typeof post.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(post.date) &&
-    typeof post.readTime === 'number' && Number.isFinite(post.readTime) && post.readTime > 0 &&
-    Array.isArray(post.tags) && post.tags.every((tag) => typeof tag === 'string' && tag.length <= 50) &&
-    (post.cover === undefined || typeof post.cover === 'string') &&
-    typeof post.content === 'string'
-  )
-}
+function parseFrontmatter(source: string) {
+  const normalized = source.replace(/\r\n/g, '\n')
+  if (!normalized.startsWith('---\n')) return null
 
-export function parsePosts(value: unknown) {
-  if (!Array.isArray(value)) return []
-  return value.filter(isPost)
-}
+  const closingIndex = normalized.indexOf('\n---\n', 4)
+  if (closingIndex < 0) return null
 
-function mergePosts(localPosts: Post[], remotePosts: Post[]) {
-  const merged = new Map(localPosts.map((post) => [post.id, post]))
-  remotePosts.forEach((post) => merged.set(post.id, post))
-  return [...merged.values()].sort(byNewest)
-}
+  const metadata = new Map<string, string>()
+  normalized.slice(4, closingIndex).split('\n').forEach((line) => {
+    const separator = line.indexOf(':')
+    if (separator < 1) return
+    metadata.set(line.slice(0, separator).trim(), line.slice(separator + 1).trim())
+  })
 
-function storePosts(posts: Post[]) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(posts.sort(byNewest)))
-}
-
-export function getPosts(): Post[] {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY)
-    if (!saved) return [...defaultPosts].sort(byNewest)
-    const parsed = parsePosts(JSON.parse(saved))
-    return (parsed.length ? parsed : [...defaultPosts]).sort(byNewest)
-  } catch {
-    return [...defaultPosts].sort(byNewest)
+  return {
+    metadata,
+    content: normalized.slice(closingIndex + 5).trim(),
   }
+}
+
+function postFromFile(path: string, source: string): Post | null {
+  const parsed = parseFrontmatter(source)
+  if (!parsed) return null
+
+  const slug = path.split('/').pop()?.replace(/\.md$/i, '') ?? ''
+  const title = parsed.metadata.get('title') ?? ''
+  const excerpt = parsed.metadata.get('excerpt') ?? ''
+  const date = parsed.metadata.get('date') ?? ''
+  const tags = (parsed.metadata.get('tags') ?? '')
+    .split(/[,，]/)
+    .map((tag) => tag.trim())
+    .filter(Boolean)
+  const configuredReadTime = Number(parsed.metadata.get('readTime'))
+
+  if (!slug || !title || !excerpt || !/^\d{4}-\d{2}-\d{2}$/.test(date) || !parsed.content) {
+    console.warn(`Skipped invalid post: ${path}`)
+    return null
+  }
+
+  return {
+    id: slug,
+    slug,
+    title,
+    excerpt,
+    date,
+    readTime: Number.isFinite(configuredReadTime) && configuredReadTime > 0
+      ? Math.ceil(configuredReadTime)
+      : Math.max(1, Math.ceil(parsed.content.length / 500)),
+    tags,
+    cover: parsed.metadata.get('cover') || undefined,
+    content: parsed.content,
+  }
+}
+
+const posts = Object.entries(markdownFiles)
+  .map(([path, source]) => postFromFile(path, source))
+  .filter((post): post is Post => Boolean(post))
+  .sort(byNewest)
+
+export function getPosts() {
+  return posts
 }
 
 export function getPost(slug: string) {
-  return getPosts().find((post) => post.slug === slug)
-}
-
-export function savePost(post: Post) {
-  const posts = getPosts()
-  const existingIndex = posts.findIndex((item) => item.id === post.id)
-
-  if (existingIndex >= 0) posts[existingIndex] = post
-  else posts.unshift(post)
-
-  storePosts(posts)
-}
-
-export async function refreshPostsFromRemote() {
-  const localPosts = getPosts()
-
-  try {
-    const response = await fetch(new URL('posts.json', document.baseURI), { cache: 'no-store' })
-    if (!response.ok) return localPosts
-
-    const remotePosts = parsePosts(await response.json())
-    if (!remotePosts.length) return localPosts
-
-    const merged = mergePosts(localPosts, remotePosts)
-    storePosts(merged)
-    return merged
-  } catch {
-    return localPosts
-  }
-}
-
-export function createSlug(title: string) {
-  const normalized = title
-    .toLowerCase()
-    .trim()
-    .replace(/[^\p{Letter}\p{Number}]+/gu, '-')
-    .replace(/^-|-$/g, '')
-
-  return `${normalized || 'note'}-${Date.now().toString(36)}`
+  return posts.find((post) => post.slug === slug)
 }
 
 export function formatPostDate(date: string) {

@@ -1,21 +1,13 @@
 import { ArrowDown, ArrowUpRight, ChevronDown, Clock3 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { formatPostDate, getPosts, refreshPostsFromRemote } from '../lib/posts'
+import { formatPostDate, getPosts } from '../lib/posts'
 import type { Post } from '../types'
 
 export function HomePage() {
-  const [posts, setPosts] = useState<Post[]>(() => getPosts())
+  const posts: Post[] = getPosts()
   const [openPost, setOpenPost] = useState<string | null>(null)
   const location = useLocation()
-
-  useEffect(() => {
-    let active = true
-    void refreshPostsFromRemote().then((nextPosts) => {
-      if (active) setPosts(nextPosts)
-    })
-    return () => { active = false }
-  }, [])
 
   useEffect(() => {
     if (location.hash === '#archive') {
@@ -39,7 +31,6 @@ export function HomePage() {
             <a className="primary-action" href="#archive">
               向下阅读 <ArrowDown size={17} />
             </a>
-            <Link className="text-action" to="/editor">打开编辑器 <ArrowUpRight size={16} /></Link>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import { Menu, PenLine, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -28,9 +28,6 @@ export function SiteHeader() {
       <nav className={menuOpen ? 'site-nav is-open' : 'site-nav'} aria-label="主导航">
         <NavLink to="/" onClick={() => setMenuOpen(false)}>首页</NavLink>
         <Link to="/#archive" onClick={() => setMenuOpen(false)}>文章</Link>
-        <NavLink className="write-link" to="/editor" onClick={() => setMenuOpen(false)}>
-          <PenLine size={15} /> 写一篇
-        </NavLink>
       </nav>
     </header>
   )
