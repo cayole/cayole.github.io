@@ -7,11 +7,43 @@ function byNewest(a: Post, b: Post) {
   return new Date(b.date).getTime() - new Date(a.date).getTime()
 }
 
+function isPost(value: unknown): value is Post {
+  if (!value || typeof value !== 'object') return false
+  const post = value as Partial<Post>
+  return (
+    typeof post.id === 'string' && post.id.length > 0 && post.id.length <= 200 &&
+    typeof post.slug === 'string' && post.slug.length > 0 && post.slug.length <= 300 &&
+    typeof post.title === 'string' && post.title.length <= 300 &&
+    typeof post.excerpt === 'string' && post.excerpt.length <= 2000 &&
+    typeof post.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(post.date) &&
+    typeof post.readTime === 'number' && Number.isFinite(post.readTime) && post.readTime > 0 &&
+    Array.isArray(post.tags) && post.tags.every((tag) => typeof tag === 'string' && tag.length <= 50) &&
+    (post.cover === undefined || typeof post.cover === 'string') &&
+    typeof post.content === 'string'
+  )
+}
+
+export function parsePosts(value: unknown) {
+  if (!Array.isArray(value)) return []
+  return value.filter(isPost)
+}
+
+function mergePosts(localPosts: Post[], remotePosts: Post[]) {
+  const merged = new Map(localPosts.map((post) => [post.id, post]))
+  remotePosts.forEach((post) => merged.set(post.id, post))
+  return [...merged.values()].sort(byNewest)
+}
+
+function storePosts(posts: Post[]) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(posts.sort(byNewest)))
+}
+
 export function getPosts(): Post[] {
   try {
     const saved = localStorage.getItem(STORAGE_KEY)
     if (!saved) return [...defaultPosts].sort(byNewest)
-    return (JSON.parse(saved) as Post[]).sort(byNewest)
+    const parsed = parsePosts(JSON.parse(saved))
+    return (parsed.length ? parsed : [...defaultPosts]).sort(byNewest)
   } catch {
     return [...defaultPosts].sort(byNewest)
   }
@@ -28,7 +60,25 @@ export function savePost(post: Post) {
   if (existingIndex >= 0) posts[existingIndex] = post
   else posts.unshift(post)
 
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(posts.sort(byNewest)))
+  storePosts(posts)
+}
+
+export async function refreshPostsFromRemote() {
+  const localPosts = getPosts()
+
+  try {
+    const response = await fetch(new URL('posts.json', document.baseURI), { cache: 'no-store' })
+    if (!response.ok) return localPosts
+
+    const remotePosts = parsePosts(await response.json())
+    if (!remotePosts.length) return localPosts
+
+    const merged = mergePosts(localPosts, remotePosts)
+    storePosts(merged)
+    return merged
+  } catch {
+    return localPosts
+  }
 }
 
 export function createSlug(title: string) {

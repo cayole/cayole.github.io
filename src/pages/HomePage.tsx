@@ -1,16 +1,20 @@
 import { ArrowDown, ArrowUpRight, ChevronDown, Clock3 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { formatPostDate, getPosts } from '../lib/posts'
+import { formatPostDate, getPosts, refreshPostsFromRemote } from '../lib/posts'
 import type { Post } from '../types'
 
 export function HomePage() {
-  const [posts, setPosts] = useState<Post[]>([])
+  const [posts, setPosts] = useState<Post[]>(() => getPosts())
   const [openPost, setOpenPost] = useState<string | null>(null)
   const location = useLocation()
 
   useEffect(() => {
-    setPosts(getPosts())
+    let active = true
+    void refreshPostsFromRemote().then((nextPosts) => {
+      if (active) setPosts(nextPosts)
+    })
+    return () => { active = false }
   }, [])
 
   useEffect(() => {

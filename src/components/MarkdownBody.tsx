@@ -3,6 +3,7 @@ import rehypeHighlight from 'rehype-highlight'
 import rehypeKatex from 'rehype-katex'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
+import { safeImageUrl } from '../lib/urls'
 
 interface MarkdownBodyProps {
   content: string
@@ -15,7 +16,7 @@ export function MarkdownBody({ content }: MarkdownBodyProps) {
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypeKatex, rehypeHighlight]}
         urlTransform={(url, key) => {
-          if (key === 'src' && url.startsWith('data:image/')) return url
+          if (key === 'src') return safeImageUrl(url) ?? ''
           return defaultUrlTransform(url)
         }}
         components={{

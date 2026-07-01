@@ -1062,6 +1062,192 @@ img {
   font-size: 11px;
 }
 
+.github-publish {
+  max-width: 1500px;
+  margin: 18px auto 0;
+  border: 1px solid #aaa59a;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.github-publish > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 72px;
+  padding: 14px 20px;
+}
+
+.github-publish.is-open > header {
+  border-bottom: 1px solid #aaa59a;
+}
+
+.github-publish-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.github-publish-title > svg {
+  flex: 0 0 auto;
+}
+
+.github-publish-title h2 {
+  margin: 0 0 4px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .06em;
+}
+
+.github-publish-title p {
+  margin: 0;
+  color: #767168;
+  font-size: 11px;
+}
+
+.github-toggle {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 8px 0 6px;
+  border: 0;
+  border-bottom: 1px solid #817c72;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 9px;
+}
+
+.github-toggle svg {
+  transition: transform 160ms ease-out;
+}
+
+.github-publish.is-open .github-toggle svg {
+  transform: rotate(180deg);
+}
+
+.github-config {
+  padding: 24px;
+  color: var(--white);
+  background: var(--ink-soft);
+  animation: summary-in 180ms ease-out both;
+}
+
+.github-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(130px, .65fr)) minmax(240px, 1.2fr);
+  gap: 18px;
+}
+
+.github-fields label {
+  display: grid;
+  gap: 9px;
+}
+
+.github-fields label > span {
+  color: #85827b;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: .1em;
+}
+
+.github-fields input {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #484848;
+  border-radius: 0;
+  outline: 0;
+  color: var(--white);
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.github-fields input:focus {
+  border-bottom-color: var(--accent);
+}
+
+.github-security-note {
+  display: grid;
+  margin-top: 24px;
+  padding: 15px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 10px;
+  color: #aaa7a0;
+}
+
+.github-security-note svg {
+  color: var(--accent);
+}
+
+.github-security-note p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.github-security-note strong {
+  color: var(--white);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.github-security-note a {
+  margin-left: 10px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #777;
+  color: var(--white);
+}
+
+.github-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.github-actions code {
+  color: #77746d;
+  font-family: var(--mono);
+  font-size: 9px;
+}
+
+.github-actions > a {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #777;
+  color: #bbb8b1;
+  font-family: var(--mono);
+  font-size: 9px;
+}
+
+.github-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 130px;
+  margin-left: auto;
+  padding: 12px 16px;
+  border: 0;
+  color: var(--ink);
+  background: var(--accent);
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 9px;
+}
+
+.github-actions button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
 .editor-toolbar {
   position: sticky;
   z-index: 20;
@@ -1206,6 +1392,14 @@ img {
 @keyframes summary-in {
   from { opacity: 0; transform: translateY(-7px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 800ms linear infinite;
 }
 
 @media (max-width: 1020px) {
@@ -1430,6 +1624,31 @@ img {
 
   .metadata-row {
     grid-template-columns: 1fr;
+  }
+
+  .github-publish > header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .github-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .github-security-note a {
+    display: inline-block;
+    margin: 8px 0 0;
+  }
+
+  .github-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .github-actions button {
+    width: 100%;
+    margin-left: 0;
   }
 
   .editor-toolbar {
