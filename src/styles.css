@@ -598,10 +598,6 @@ img {
   text-wrap: balance;
 }
 
-.site-footer > p::first-letter {
-  color: var(--accent);
-}
-
 .site-footer div {
   display: flex;
   justify-content: space-between;
