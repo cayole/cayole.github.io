@@ -999,6 +999,17 @@ img {
   object-fit: cover;
 }
 
+.markdown-body .markdown-image img[src$=".svg"] {
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+.markdown-body .markdown-diagram {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .markdown-body .image-caption {
   display: block;
   margin-top: 9px;

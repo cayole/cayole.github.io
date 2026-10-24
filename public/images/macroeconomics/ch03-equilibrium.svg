@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 900" role="img" aria-labelledby="title desc">
+  <title id="title">政府购买增加如何改变均衡产出</title>
+  <desc id="desc">横轴收入Y、纵轴计划需求Z，两个轴使用相同尺度。45度线为Z等于Y。原需求线Z等于340加0.6Y，在850处相交。政府购买增加40后，需求线平移至Z等于380加0.6Y，在950处相交，产出增加100。</desc>
+  <defs>
+    <marker id="axis" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="#171717"/></marker>
+  </defs>
+  <rect width="960" height="900" fill="#f8f7f3"/>
+  <g font-family="'Microsoft YaHei', sans-serif" fill="#171717">
+    <text x="52" y="50" font-size="29" font-weight="700">需求线只抬高 40，均衡产出却增加 100。</text>
+    <text x="105" y="92" font-size="22">计划需求 Z</text>
+    <g stroke="#e4e0d6" stroke-width="1">
+      <path d="M105 520 H765 M105 300 H765 M105 80 H765 M325 740 V80 M545 740 V80 M765 740 V80"/>
+    </g>
+    <g fill="none" stroke="#171717" stroke-width="2" marker-end="url(#axis)">
+      <path d="M105 740 H870"/><path d="M105 740 V110"/>
+    </g>
+    <path d="M105 740 L765 80" stroke="#97958f" stroke-width="3"/>
+    <path d="M105 553 L765 157" stroke="#171717" stroke-width="4" fill="none"/>
+    <path d="M105 531 L765 135" stroke="#b9341f" stroke-width="4" fill="none"/>
+    <g font-size="19" text-anchor="middle">
+      <text x="105" y="772">0</text><text x="325" y="772">400</text>
+      <text x="545" y="772">800</text><text x="765" y="772">1,200</text>
+    </g>
+    <g font-size="19" text-anchor="end">
+      <text x="91" y="527">400</text><text x="91" y="307">800</text>
+    </g>
+    <text x="825" y="784" font-size="22">收入 Y</text>
+    <text x="618" y="107" font-size="22" fill="#65625c">45°线：Z = Y</text>
+    <text x="782" y="140" font-size="21" fill="#b9341f">ZZ′</text>
+    <text x="782" y="176" font-size="21">ZZ</text>
+    <g stroke="#97958f" stroke-width="2" stroke-dasharray="6 6">
+      <path d="M572.5 272.5 V740"/><path d="M627.5 217.5 V740"/>
+    </g>
+    <circle cx="572.5" cy="272.5" r="7" fill="#171717"/>
+    <circle cx="627.5" cy="217.5" r="7" fill="#b9341f"/>
+    <text x="491" y="261" font-size="23">A · 850</text>
+    <text x="645" y="213" font-size="23" fill="#b9341f">B · 950</text>
+    <rect x="322" y="409" width="440" height="148" fill="#f8f7f3" stroke="#cbc6ba"/>
+    <text x="344" y="449" font-size="23">ZZ：Z = 340 + 0.6Y</text>
+    <text x="344" y="488" font-size="23" fill="#b9341f">ZZ′：Z = 380 + 0.6Y</text>
+    <text x="344" y="528" font-size="20" fill="#65625c">截距上升 40，斜率保持 0.6。</text>
+    <text x="52" y="832" font-size="25" font-weight="700">A → B：ΔY = 40 ÷ (1 − 0.6) = 100</text>
+    <text x="52" y="875" font-size="20" fill="#65625c">原创图 · 两轴等比例 · 数值为教学假设 · 均衡点是计划需求等于产出的交点</text>
+  </g>
+</svg>

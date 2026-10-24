@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">需求、产出与收入的反馈循环</title>
+  <desc id="desc">新增需求使企业增加产出，形成等量新增收入。收入的一部分变为消费，再次形成需求。每轮反馈的规模按边际消费倾向递减。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#b9341f" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="960" height="640" fill="#f8f7f3"/>
+  <g font-family="'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" fill="#171717">
+    <text x="52" y="64" font-size="16" letter-spacing="2" fill="#b9341f">GOODS MARKET / 产品市场</text>
+    <text x="52" y="116" font-size="34" font-weight="700">我的支出，成为了别人的收入。</text>
+    <g fill="#f1eee6" stroke="#cbc6ba">
+      <rect x="52" y="198" width="240" height="156"/>
+      <rect x="360" y="198" width="240" height="156"/>
+      <rect x="668" y="198" width="240" height="156"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="172" y="251" font-size="27" font-weight="700">产品需求 Z</text>
+      <text x="172" y="296" font-size="19">消费 + 投资 + 政府购买</text>
+      <text x="480" y="251" font-size="27" font-weight="700">企业产出 Y</text>
+      <text x="480" y="296" font-size="22">接到订单，增加生产</text>
+      <text x="788" y="251" font-size="27" font-weight="700">经济总收入 Y</text>
+      <text x="788" y="296" font-size="22">工资、利润等收入</text>
+    </g>
+    <g fill="none" stroke="#b9341f" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M300 276 H346"/>
+      <path d="M608 276 H654"/>
+      <path d="M788 366 V465 H172 V370"/>
+    </g>
+    <rect x="265" y="433" width="430" height="62" fill="#f8f7f3"/>
+    <text x="480" y="474" text-anchor="middle" font-size="25" fill="#b9341f">新增收入 × c₁ → 下一轮消费</text>
+    <text x="52" y="558" font-size="23">当 0 &lt; c₁ &lt; 1，每轮新增消费小于上轮新增收入。</text>
+    <text x="52" y="600" font-size="20" fill="#65625c">固定价格、投资与税收的短期模型 · 原创教学图，不表示现实中的固定时间间隔</text>
+  </g>
+</svg>

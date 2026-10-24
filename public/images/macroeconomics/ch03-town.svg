@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">河湾镇，一条街里的经济学</title>
+  <desc id="desc">一条街上有面包店、理发店和书店，旁边的工程队正在修路。新增订单形成收入，收入带来新的消费，连接起不同店铺。</desc>
+  <rect width="960" height="640" fill="#f8f7f3"/>
+  <g font-family="'Microsoft YaHei', sans-serif" fill="#171717">
+    <text x="48" y="58" font-size="18" fill="#b9341f" letter-spacing="2">RIVERBEND / 河湾镇</text>
+    <text x="48" y="111" font-size="38" font-weight="700">一条街，藏着一整个经济循环。</text>
+    <circle cx="841" cy="203" r="39" fill="#ff5938"/>
+    <path d="M48 388H912 M48 477H912" stroke="#cbc6ba" stroke-width="2"/>
+    <path d="M48 435H912" stroke="#97958f" stroke-width="3" stroke-dasharray="28 20"/>
+    <g stroke="#171717" stroke-width="3">
+      <path d="M72 260 105 205H250L282 260Z" fill="#ff5938"/>
+      <path d="M89 260V383H266V260Z" fill="#f1eee6"/>
+      <path d="M111 310H157V349H111Z M191 310H235V383H191Z" fill="#f8f7f3"/>
+      <path d="M328 260 360 205H505L538 260Z" fill="#e4e0d6"/>
+      <path d="M344 260V383H521V260Z" fill="#f1eee6"/>
+      <path d="M366 310H412V349H366Z M446 310H490V383H446Z" fill="#f8f7f3"/>
+      <path d="M584 260 616 205H761L794 260Z" fill="#ff5938"/>
+      <path d="M600 260V383H777V260Z" fill="#f1eee6"/>
+      <path d="M622 310H668V349H622Z M702 310H746V383H702Z" fill="#f8f7f3"/>
+    </g>
+    <g text-anchor="middle" font-size="23" font-weight="700">
+      <text x="177" y="294">面包店</text><text x="432" y="294">理发店</text><text x="688" y="294">书店</text>
+    </g>
+    <g fill="#171717">
+      <circle cx="183" cy="405" r="7"/><path d="M183 414V443 M183 424 170 435 M183 424 196 435 M183 443 174 459 M183 443 193 459" stroke="#171717" stroke-width="4"/>
+      <circle cx="461" cy="405" r="7"/><path d="M461 414V443 M461 424 448 435 M461 424 474 435 M461 443 452 459 M461 443 471 459" stroke="#171717" stroke-width="4"/>
+    </g>
+    <path d="M813 384 830 341 847 384Z M865 384 882 341 899 384Z" fill="#ff5938" stroke="#171717" stroke-width="2"/>
+    <text x="856" y="315" text-anchor="middle" font-size="21">修路中</text>
+    <g font-size="24" text-anchor="middle">
+      <text x="177" y="535">有人多买一袋面包</text>
+      <text x="480" y="535">有人多接一笔订单</text>
+      <text x="786" y="535">有人多一份收入</text>
+    </g>
+    <path d="M304 525H345 M610 525H651" stroke="#b9341f" stroke-width="3"/>
+    <text x="480" y="601" text-anchor="middle" font-size="23" fill="#b9341f">你的支出，可能就是隔壁店的下一笔收入。</text>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 import type { Post } from '../types'
 
-const markdownFiles = import.meta.glob('../content/posts/*.md', {
+const markdownFiles = import.meta.glob('../content/posts/**/*.md', {
   query: '?raw',
   import: 'default',
   eager: true,

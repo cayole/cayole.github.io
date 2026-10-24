@@ -2,6 +2,8 @@
 
 一个以 Markdown 文件为内容源的静态个人博客，包含日期线首页、代码高亮、KaTeX 公式和响应式文章页。
 
+后续文章、图解与动画制作统一遵循 [文章制作标准](ARTICLE_STANDARDS.md)，项目工作约定见 [AGENTS.md](AGENTS.md)。
+
 ## 本地运行
 
 ```bash
@@ -47,6 +49,30 @@ $$
 ````
 
 必填字段为 `title`、`excerpt`、`date`；`readTime`、`tags` 和 `cover` 可以按需填写。日期必须使用 `YYYY-MM-DD` 格式。
+
+## 文章系列
+
+“宏观经济学”系列的文章放在 `src/content/posts/macroeconomics/` 中，例如：
+
+```text
+src/content/posts/macroeconomics/macroeconomics-01-introduction.md
+```
+
+使用上面的文章模板，并可填写 `tags: 宏观经济学`。子目录中的 Markdown 文章会自动出现在首页；空系列目录不会显示为文章。
+文章网址仍使用文件名，因此不同目录中的文章文件名也必须保持唯一。
+
+## 文章中的交互演示
+
+产品市场乘数演示可通过以下专用代码块插入：
+
+~~~~md
+~~~goods-market
+~~~
+~~~~
+
+它支持调整消费倾向和政府购买增量、单步播放及暂停。使用 `spending-quiz` 代码块插入支出分类小游戏，使用 `town-demand` 代码块插入订单、库存与产出的情景演示。
+
+这些是博客内置的组件，不执行文章中提供的 JavaScript 或 HTML。普通代码块仍按原方式显示。
 
 ## 图片
 

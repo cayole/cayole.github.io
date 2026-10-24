@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" role="img" aria-labelledby="title desc">
+  <title id="title">个人少花与全镇少花，为什么结果不同</title>
+  <desc id="desc">在收入固定为100的个人例子里，消费从80降至60，储蓄从20升至40。在投资和财政固定的小镇例子里，自主消费减少40，均衡收入从850降至750，消费从550降至450，私人储蓄仍为200。</desc>
+  <rect width="960" height="760" fill="#f8f7f3"/>
+  <g font-family="'Microsoft YaHei', sans-serif" fill="#171717">
+    <text x="48" y="62" font-size="32" font-weight="700">少买一杯咖啡，和全镇一起收紧钱包。</text>
+    <text x="48" y="108" font-size="22" fill="#65625c">看起来是同一件事，收入的反应却不同。</text>
+    <rect x="48" y="155" width="408" height="446" fill="#f1eee6" stroke="#cbc6ba"/>
+    <rect x="504" y="155" width="408" height="446" fill="#f1eee6" stroke="#cbc6ba"/>
+    <text x="76" y="205" font-size="27" font-weight="700">一个人的账本</text>
+    <text x="532" y="205" font-size="27" font-weight="700">全镇的账本</text>
+    <text x="76" y="248" font-size="20">先假设：收入不受影响</text>
+    <text x="532" y="248" font-size="20">先假设：投资、财政不变</text>
+    <g font-size="25">
+      <text x="76" y="325">收入</text><text x="229" y="325">100 → 100</text>
+      <text x="76" y="391">消费</text><text x="229" y="391">80 → 60</text>
+      <text x="76" y="457">储蓄</text><text x="229" y="457" fill="#b9341f">20 → 40</text>
+      <text x="532" y="325">总收入</text><text x="686" y="325">850 → 750</text>
+      <text x="532" y="391">总消费</text><text x="686" y="391">550 → 450</text>
+      <text x="532" y="457">私人储蓄</text><text x="686" y="457" fill="#b9341f">200 → 200</text>
+    </g>
+    <path d="M76 490H428 M532 490H884" stroke="#cbc6ba"/>
+    <text x="76" y="546" font-size="23">少花的，变成了自己的储蓄。</text>
+    <text x="532" y="546" font-size="23">少花的，也减少了别人的收入。</text>
+    <text x="48" y="663" font-size="25" font-weight="700">关键区别：收入是固定的，还是会跟着支出变化？</text>
+    <text x="48" y="714" font-size="20" fill="#65625c">原创教学例子，两侧规模不同。右图是短期均衡结果，不是反对个人储蓄的建议。</text>
+  </g>
+</svg>
