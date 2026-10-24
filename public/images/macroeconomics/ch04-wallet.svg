@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+<title id="title">老周的三只抽屉</title><desc id="desc">收入是一段时间流入的钱；财富是某时点持有的净资产；货币只是财富中能便捷支付的一部分。</desc>
+<rect width="960" height="680" fill="#f8f7f3"/><g font-family="'Microsoft YaHei', sans-serif" fill="#171717">
+
+<text x="48" y="60" font-size="18" fill="#b9341f">河湾镇 · 修路之后</text><text x="48" y="114" font-size="36" font-weight="700">有财富，不等于随手就能付账。</text>
+<rect x="48" y="170" width="264" height="320" fill="#f1eee6" stroke="#cbc6ba"/><rect x="348" y="170" width="264" height="320" fill="#f1eee6" stroke="#cbc6ba"/><rect x="648" y="170" width="264" height="320" fill="#f1eee6" stroke="#cbc6ba"/>
+<g stroke="#171717" stroke-width="3"><rect x="112" y="214" width="132" height="88" rx="5" fill="#ff5938"/><rect x="195" y="237" width="61" height="40" fill="#f8f7f3"/><path d="M406 251 480 206 554 251Z M415 295H545 M428 252V290 M463 252V290 M498 252V290 M533 252V290" fill="none"/><rect x="716" y="205" width="120" height="104" fill="#f8f7f3"/><path d="M733 231H817 M733 250H817 M733 269H791" fill="none"/></g>
+<g text-anchor="middle"><text x="180" y="357" font-size="28" font-weight="700">通货</text><text x="480" y="357" font-size="28" font-weight="700">可支付存款</text><text x="780" y="357" font-size="28" font-weight="700">债券</text><text x="180" y="410" font-size="22">纸币、硬币</text><text x="480" y="410" font-size="22">账户余额、转账结算</text><text x="780" y="410" font-size="22">未来还款的凭条</text><text x="180" y="454" font-size="21">方便交易</text><text x="480" y="454" font-size="21">方便交易</text><text x="780" y="454" font-size="21">先出售，才能花掉</text></g>
+<path d="M48 526H612" stroke="#b9341f" stroke-width="3"/><text x="330" y="566" text-anchor="middle" font-size="25" fill="#b9341f">这里讨论的货币 M</text>
+<text x="48" y="630" font-size="22">三只抽屉都是资产配置；把钱换成债券，不等于当期收入增加。</text>
+</g></svg>

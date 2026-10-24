@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+<title id="title">相同的104元，购买力不同</title><desc id="desc">借入100元买10份面包篮子。一年名义利率4%。若篮子价格由10涨至10.2，104元可买10.20份；若跌至9.8，可买10.61份。</desc>
+<rect width="960" height="680" fill="#f8f7f3"/><g font-family="'Microsoft YaHei', sans-serif" fill="#171717">
+
+<text x="48" y="63" font-size="34" font-weight="700">要还 104 元，到底要还多少“面包”？</text><text x="48" y="111" font-size="22" fill="#65625c">今天：借入 100 元，一份标准面包篮子 10 元，可买 10 份。</text>
+<rect x="48" y="170" width="408" height="300" fill="#f1eee6" stroke="#cbc6ba"/><rect x="504" y="170" width="408" height="300" fill="#f1eee6" stroke="#cbc6ba"/>
+<text x="76" y="225" font-size="28" font-weight="700">预期物价上涨 2%</text><text x="532" y="225" font-size="28" font-weight="700">预期物价下跌 2%</text>
+<text x="76" y="294" font-size="24">明年每份 10.20 元</text><text x="532" y="294" font-size="24">明年每份 9.80 元</text>
+<text x="76" y="361" font-size="30" fill="#b9341f">104 元 ≈ 10.20 份</text><text x="532" y="361" font-size="30" fill="#b9341f">104 元 ≈ 10.61 份</text>
+<text x="76" y="422" font-size="23">实际利率约 1.96%</text><text x="532" y="422" font-size="23">实际利率约 6.12%</text>
+<text x="48" y="546" font-size="27" font-weight="700">欠款数字相同，通缩时的购买力负担更大。</text>
+<text x="48" y="603" font-size="24">1 + r = (1 + i) / (1 + 预期通胀)</text><text x="48" y="650" font-size="20" fill="#65625c">数值为假设。一份篮子代表固定的一组商品，不是对真实面包价格的预测。</text>
+</g></svg>

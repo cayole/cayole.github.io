@@ -74,6 +74,8 @@ src/content/posts/macroeconomics/macroeconomics-01-introduction.md
 
 这些是博客内置的组件，不执行文章中提供的 JavaScript 或 HTML。普通代码块仍按原方式显示。
 
+金融主题另提供 `bond-price`、`money-market`、`investment-lab`、`is-lm-lab`、`real-rate`、`bank-capital`、`credit-wedge` 代码块。对应模型和控件位于 `src/components/finance/`，用途见 [文章制作标准](ARTICLE_STANDARDS.md)。
+
 ## 图片
 
 将图片放入 `public/images/`：

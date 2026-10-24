@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+<title id="title">中央银行向商业银行购债，谁的账本改变了</title><desc id="desc">央行向商业银行购买20的债券。央行债券资产与准备金负债同时增加20；商业银行把20债券资产换成20准备金，客户存款不因这笔交易自动增加。</desc>
+<rect width="960" height="680" fill="#f8f7f3"/><g font-family="'Microsoft YaHei', sans-serif" fill="#171717">
+
+<text x="48" y="64" font-size="33" font-weight="700">一次买债券，两本账同步改变。</text><text x="48" y="110" font-size="22" fill="#65625c">交易：中央银行向河湾银行买入 20 的债券。</text>
+<rect x="48" y="164" width="402" height="296" fill="#f1eee6" stroke="#cbc6ba"/><rect x="510" y="164" width="402" height="296" fill="#f1eee6" stroke="#cbc6ba"/>
+<text x="76" y="216" font-size="29" font-weight="700">中央银行</text><text x="538" y="216" font-size="29" font-weight="700">河湾银行</text>
+<text x="76" y="287" font-size="24">资产：债券 +20</text><text x="76" y="353" font-size="24" fill="#b9341f">负债：准备金余额 +20</text>
+<text x="538" y="287" font-size="24">资产：债券 −20</text><text x="538" y="353" font-size="24" fill="#b9341f">资产：准备金 +20</text>
+<text x="76" y="418" font-size="20">央行资产与负债等额扩张</text><text x="538" y="418" font-size="20">银行资产组合改变</text>
+<text x="48" y="525" font-size="26" font-weight="700">准备金是银行的资产，也是央行的负债。</text>
+<text x="48" y="578" font-size="22">它不是居民可以拿去买面包的那一笔存款。</text>
+<text x="48" y="632" font-size="20" fill="#65625c">仅画交易增量。若卖方是非银行客户，结算还会涉及客户存款，需另画账本。</text>
+</g></svg>

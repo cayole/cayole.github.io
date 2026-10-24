@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+<title id="title">两股力量决定老周的烤箱计划</title><desc id="desc">更多销售使企业更愿意增加设备；更高融资成本使设备项目更难盈利。项目的投资也会形成订单和收入，产生反馈。</desc>
+<rect width="960" height="680" fill="#f8f7f3"/><g font-family="'Microsoft YaHei', sans-serif" fill="#171717">
+
+<text x="48" y="62" font-size="18" fill="#b9341f">河湾镇 · 一台新烤箱</text><text x="48" y="115" font-size="34" font-weight="700">卖得多，想扩店；借得贵，先等等。</text>
+<rect x="48" y="180" width="275" height="280" fill="#f1eee6" stroke="#cbc6ba"/><rect x="637" y="180" width="275" height="280" fill="#f1eee6" stroke="#cbc6ba"/>
+<rect x="386" y="227" width="188" height="160" fill="#e4e0d6" stroke="#171717" stroke-width="3"/><rect x="409" y="272" width="142" height="89" fill="#171717"/><circle cx="415" cy="247" r="6" fill="#ff5938"/><circle cx="444" cy="247" r="6" fill="#ff5938"/>
+<g text-anchor="middle"><text x="186" y="245" font-size="28" font-weight="700">销售增加</text><text x="186" y="306" font-size="23">订单多、产能紧</text><text x="186" y="373" font-size="28" fill="#b9341f">投资意愿 ↑</text>
+<text x="774" y="245" font-size="28" font-weight="700">利率上升</text><text x="774" y="306" font-size="23">融资与机会成本高</text><text x="774" y="373" font-size="28" fill="#b9341f">投资意愿 ↓</text>
+<text x="480" y="427" font-size="24">同一份设备计划</text></g>
+<text x="48" y="538" font-size="26" font-weight="700">投资不再是固定数字：I = I(Y, i)</text>
+<text x="48" y="593" font-size="22">买下烤箱，又给设备商带来订单，进一步影响全镇收入。</text><text x="48" y="645" font-size="20" fill="#65625c">先忽略预期通胀与信用利差。真实投资还受销售预期、风险和融资可得性影响。</text>
+</g></svg>
