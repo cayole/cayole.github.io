@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+<title id="title">三把尺子看同一条平衡增长路径</title><desc id="desc">技术每期增2%、劳动每期增1%时，每有效劳动产出不变，每劳动者产出增2%，总产出精确增3.02%。模型假设资本与有效劳动配套增长。</desc>
+<rect width="960" height="650" fill="#f6f1e8"/><g font-family="sans-serif" fill="#242424"><rect x="40" y="38" width="80" height="8" fill="#eb6b32"/><text x="40" y="97" font-size="34" font-weight="700">不是停住了，是尺子也在变长</text><text x="40" y="140" font-size="23">平衡增长路径：A 每期 +2%，N 每期 +1%</text>
+<rect x="40" y="180" width="880" height="100" rx="8" fill="#242424"/><text x="65" y="222" fill="#fff" font-size="25">每有效劳动产出：Y / (AN)</text><text x="740" y="245" fill="#fff" font-size="34">不变</text><text x="65" y="260" fill="#fff" font-size="20">资本配套程度 K / (AN) 也保持不变</text>
+<text x="65" y="322" font-size="23">× 技术水平 A</text><path d="M500 295V333" stroke="#242424" stroke-width="3"/>
+<rect x="40" y="350" width="880" height="90" rx="8" fill="#fff" stroke="#cfc8bc"/><text x="65" y="404" font-size="25">每劳动者产出：Y / N</text><text x="730" y="406" font-size="34" fill="#b44213">+2%</text>
+<text x="65" y="483" font-size="23">× 劳动人数 N</text><path d="M500 455V491" stroke="#242424" stroke-width="3"/>
+<rect x="40" y="510" width="880" height="90" rx="8" fill="#eb6b32"/><text x="65" y="565" font-size="25">总产出：Y</text><text x="690" y="566" font-size="34">+3.02%</text>
+<text x="40" y="632" font-size="18">离散期精确计算：1.02 × 1.01 − 1 = 3.02%；按总人口计算还要核对就业比例。</text></g></svg>

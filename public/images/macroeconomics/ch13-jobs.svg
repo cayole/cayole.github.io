@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+<title id="title">效率提高，就业还要看订单</title><desc id="desc">简化模型Y等于AN，起点A1、Y100、N100。A提高至1.2后，Y100、110、120、130分别需要N83.33、91.67、100、108.33。</desc>
+<rect width="960" height="650" fill="#f6f1e8"/><g font-family="sans-serif" fill="#242424"><rect x="40" y="38" width="80" height="8" fill="#eb6b32"/><text x="40" y="97" font-size="34" font-weight="700">同样提效 20%，岗位可以少、平、多</text><text x="40" y="140" font-size="22">教学模型 Y = AN；起点 A = 1，Y = 100，N = 100</text>
+<rect x="40" y="180" width="880" height="75" rx="8" fill="#242424"/><text x="65" y="227" fill="#fff" font-size="25">新效率统一为 A = 1.2 → 所需劳动 N = Y / 1.2</text>
+<g font-size="24"><text x="65" y="310">产出情景</text><text x="410" y="310">所需劳动 N</text><text x="670" y="310">相对起点变化</text>
+<path d="M40 330H920M40 392H920M40 454H920M40 516H920M40 578H920" stroke="#cfc8bc"/>
+<text x="65" y="370">不变：100</text><text x="410" y="370">83.33</text><text x="670" y="370">−16.67%</text>
+<text x="65" y="432">增加 10%：110</text><text x="410" y="432">91.67</text><text x="670" y="432">−8.33%</text>
+<text x="65" y="494">增加 20%：120</text><text x="410" y="494">100</text><text x="670" y="494">0%</text>
+<text x="65" y="556">增加 30%：130</text><text x="410" y="556">108.33</text><text x="670" y="556" fill="#b44213">+8.33%</text></g>
+<text x="40" y="622" font-size="19">这道算术不生成需求，也不保证一家店与整个经济体的就业变化相同。</text></g></svg>

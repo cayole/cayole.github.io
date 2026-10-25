@@ -235,4 +235,6 @@ $$
 
 上一站：[工资涨了，面包也涨了：大家为什么越猜越贵？](#/post/macroeconomics-06-inflation-expectations)
 
+下一站：[翻开二十年前的账本：河湾镇真的变富了吗？](#/post/macroeconomics-08-economic-growth)
+
 从头逛起：[一笔修路款，怎样让整条街热闹起来？](#/post/macroeconomics-01-goods-market)

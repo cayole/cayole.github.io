@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+<title id="title">复制整家店与只添烤箱的区别</title><desc id="desc">平方根生产函数中，资本和劳动同时翻倍，产出翻倍；只把资本翻倍，产出从100提高到约141.42。规模报酬不变与资本边际报酬递减可以同时成立。</desc>
+<rect width="960" height="650" fill="#f6f1e8"/><g font-family="sans-serif" fill="#242424"><rect x="40" y="38" width="80" height="8" fill="#eb6b32"/><text x="40" y="97" font-size="34" font-weight="700">复制整家店 ≠ 只往店里塞烤箱</text><text x="40" y="141" font-size="23">假设方法不变：Y = √(K × N)</text>
+<rect x="40" y="185" width="880" height="95" rx="8" fill="#242424"/><text x="70" y="225" fill="#fff" font-size="24">起点：K = 100，N = 100</text><text x="70" y="260" fill="#fff" font-size="24">产出 Y = 100</text>
+<rect x="40" y="310" width="425" height="230" rx="8" fill="#fff" stroke="#d4cabc"/><rect x="495" y="310" width="425" height="230" rx="8" fill="#fff" stroke="#eb6b32"/>
+<text x="65" y="355" font-size="26" font-weight="700">两种投入一起翻倍</text><text x="65" y="405" font-size="23">K = 200，N = 200</text><text x="65" y="453" font-size="28">Y = 200</text><text x="65" y="507" font-size="21">规模报酬不变</text>
+<text x="520" y="355" font-size="26" font-weight="700">只把资本翻倍</text><text x="520" y="405" font-size="23">K = 200，N = 100</text><text x="520" y="453" font-size="28" fill="#b44213">Y ≈ 141.42</text><text x="520" y="507" font-size="21">更多设备，增产却不到一倍</text>
+<text x="40" y="585" font-size="23">复制完整配套，与固定一项投入后增加另一项，是不同实验。</text><text x="40" y="622" font-size="19">平方根函数为教学假设，数值不是现实生产率估计。</text></g></svg>

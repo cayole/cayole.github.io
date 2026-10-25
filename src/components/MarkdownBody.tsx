@@ -14,6 +14,10 @@ import { BankCapitalLab, CreditWedgeLab, RealRateLab } from './finance/RiskLabs'
 import { LabourCountLab, WagePriceLab } from './labour/LabourLabs'
 import { ExpectationsLab, PriceLevelLab } from './labour/InflationLabs'
 import { DeflationLab, MediumRunLab } from './labour/MediumRunLabs'
+import { CompoundingLab, PurchasingPowerLab } from './growth/GrowthBasics'
+import { CapitalAccumulationLab, GoldenRuleLab } from './growth/CapitalLabs'
+import { BalancedGrowthLab, GrowthAccountingLab } from './growth/TechnologyLabs'
+import { ProductivityJobsLab, ProductivityWageLab } from './growth/ProductivityLabs'
 
 const financeLabs = {
   'bond-price': BondLab,
@@ -29,6 +33,14 @@ const financeLabs = {
   'price-level': PriceLevelLab,
   'medium-run': MediumRunLab,
   'deflation-lab': DeflationLab,
+  'compound-growth': CompoundingLab,
+  'purchasing-power': PurchasingPowerLab,
+  'capital-accumulation': CapitalAccumulationLab,
+  'golden-rule': GoldenRuleLab,
+  'balanced-growth': BalancedGrowthLab,
+  'growth-accounting': GrowthAccountingLab,
+  'productivity-jobs': ProductivityJobsLab,
+  'productivity-wages': ProductivityWageLab,
 }
 
 interface MarkdownBodyProps {

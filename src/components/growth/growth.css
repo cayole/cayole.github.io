@@ -1,0 +1,16 @@
+.growth-chart { margin-bottom: .75rem; }
+.growth-chart .policy { stroke-dasharray: 12 5; }
+.growth-chart .old { stroke-dasharray: 3 6; }
+.growth-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .75rem; margin: 1rem 0; }
+.growth-comparison > div { border: 1px solid var(--line-light); padding: 1rem; }
+.growth-comparison strong { display: block; font-size: .9rem; }
+.growth-comparison span { display: block; margin-top: .5rem; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.growth-decomposition { display: grid; gap: .5rem; margin: 1rem 0; }
+.growth-decomposition > div { padding: .75rem 1rem; background: var(--paper); border-left: 3px solid var(--line-light); display: flex; justify-content: space-between; gap: 1rem; }
+.growth-decomposition > div:last-child { border-color: var(--accent); }
+.growth-decomposition strong { font-family: var(--mono); white-space: nowrap; }
+.growth-worker-row { display: grid; grid-template-columns: 6rem minmax(0,1fr) 4rem; gap: .5rem; align-items: center; font-size: .8rem; margin: 1rem 0; }
+.growth-worker-track { height: 1.1rem; background: var(--paper-deep); }
+.growth-worker-track > span { display: block; height: 100%; background: var(--accent); }
+@media (max-width: 640px) { .growth-chart .finance-graph { font-size: 26px; } }
+@media (max-width: 480px) { .growth-comparison { grid-template-columns: 1fr; } .growth-decomposition > div { display: block; } .growth-decomposition strong { display: block; margin-top: .5rem; } .growth-worker-row { grid-template-columns: 4rem minmax(0,1fr) 3.5rem; } }

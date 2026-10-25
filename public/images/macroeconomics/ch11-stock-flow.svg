@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+<title id="title">投资先补折旧，再形成净资本增加</title><desc id="desc">期初资本10，折旧1，当期新增投资1.5，下一期资本10.5。资本是某时点的存量，投资是某段时期内的流量。</desc>
+<rect width="960" height="650" fill="#f6f1e8"/><g font-family="sans-serif" fill="#242424"><rect x="40" y="38" width="80" height="8" fill="#eb6b32"/><text x="40" y="97" font-size="34" font-weight="700">买了 1.5，资本为什么只多了 0.5？</text><text x="40" y="140" font-size="23">统一单位：可比资本量；折旧率每期 10%</text>
+<rect x="40" y="190" width="240" height="145" rx="8" fill="#242424"/><text x="65" y="235" fill="#fff" font-size="24">期初资本</text><text x="65" y="300" fill="#fff" font-size="46">10</text>
+<text x="304" y="275" font-size="40">−</text><rect x="360" y="190" width="240" height="145" rx="8" fill="#fff" stroke="#cfc8bc"/><text x="385" y="235" font-size="24">折旧损耗</text><text x="385" y="300" font-size="46">1</text>
+<text x="624" y="275" font-size="40">+</text><rect x="680" y="190" width="240" height="145" rx="8" fill="#eb6b32"/><text x="705" y="235" font-size="24">新增投资</text><text x="705" y="300" font-size="46">1.5</text>
+<path d="M480 355V395" stroke="#242424" stroke-width="4"/><path d="m470 383 10 14 10-14" fill="none" stroke="#242424" stroke-width="4"/>
+<rect x="190" y="416" width="580" height="110" rx="8" fill="#fff" stroke="#242424"/><text x="220" y="463" font-size="24">下一期期初资本</text><text x="590" y="488" font-size="46" fill="#b44213">10.5</text>
+<text x="40" y="578" font-size="24">K 下一期 = (1 − δ) × K 本期 + I 本期</text><text x="40" y="621" font-size="19">资本是时点存量；投资是期间流量。教学更新规则：新增投资期末计入。</text></g></svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+<title id="title">分母变了，增长的意思也变了</title><desc id="desc">原来产出10000、人口100、劳动者50，人均100、每劳动者200。只扩大规模不提高两个比值；就业比例增加可以提高人均产出而不提高每劳动者产出。</desc>
+<rect width="960" height="650" fill="#f6f1e8"/><g font-family="sans-serif" fill="#242424">
+<rect x="40" y="38" width="80" height="8" fill="#eb6b32"/><text x="40" y="97" font-size="34" font-weight="700">同样叫增长，先看分母</text><text x="40" y="138" font-size="22">教学例子：同一组固定价格计算实际产出</text>
+<rect x="40" y="176" width="880" height="75" rx="8" fill="#242424"/><text x="65" y="222" fill="#fff" font-size="24">人均产出 = 每劳动者产出 × 劳动者占人口比例</text>
+<g font-size="22"><text x="55" y="300">情景</text><text x="340" y="300">产出 / 人口 / 劳动者</text><text x="660" y="300">人均</text><text x="775" y="300">每劳动者</text>
+<path d="M40 320H920M40 388H920M40 456H920M40 524H920" stroke="#cfc8bc"/>
+<text x="55" y="364">起点</text><text x="340" y="364">10000 / 100 / 50</text><text x="660" y="364">100</text><text x="795" y="364">200</text>
+<text x="55" y="432">规模全部翻倍</text><text x="340" y="432">20000 / 200 / 100</text><text x="660" y="432">100</text><text x="795" y="432">200</text>
+<text x="55" y="500">更多人参加工作</text><text x="340" y="500">12000 / 100 / 60</text><text x="660" y="500" fill="#b44213">120</text><text x="795" y="500">200</text>
+<text x="55" y="568">每位劳动者产出增加</text><text x="340" y="568">12000 / 100 / 50</text><text x="660" y="568" fill="#b44213">120</text><text x="795" y="568" fill="#b44213">240</text></g>
+<text x="40" y="620" font-size="19">总量、人均与每劳动者口径回答不同问题；产出也不等于完整的生活质量。</text></g></svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 710" role="img" aria-labelledby="title desc">
+<title id="title">一张新配方，如何变成更多人的生产能力</title><desc id="desc">知识基础、试验、采用和扩散需要不同条件；研发不保证成功。知识共享带来外溢，但创新者回报与广泛使用之间存在权衡。</desc>
+<rect width="960" height="710" fill="#f6f1e8"/><g font-family="sans-serif" fill="#242424"><rect x="40" y="38" width="80" height="8" fill="#eb6b32"/><text x="40" y="97" font-size="34" font-weight="700">好想法，不会自己走进每一家店</text><text x="40" y="140" font-size="22">机制示意：每一步都可能卡住，不是必然成功的流水线</text>
+<g font-size="24"><rect x="40" y="195" width="250" height="150" rx="8" fill="#fff" stroke="#cfc8bc"/><text x="65" y="242" font-weight="700">知识与试验</text><text x="65" y="284" font-size="21">人才、时间、设备</text><text x="65" y="322" font-size="21">允许失败与反复修改</text>
+<path d="M307 268H348m-12-9 12 9-12 9" fill="none" stroke="#242424" stroke-width="3"/>
+<rect x="365" y="195" width="240" height="150" rx="8" fill="#eb6b32"/><text x="390" y="242" font-weight="700">可用的新方法</text><text x="390" y="284" font-size="21">不只新机器</text><text x="390" y="322" font-size="21">也有流程与新产品</text>
+<path d="M622 268H663m-12-9 12 9-12 9" fill="none" stroke="#242424" stroke-width="3"/>
+<rect x="680" y="195" width="240" height="150" rx="8" fill="#fff" stroke="#cfc8bc"/><text x="705" y="242" font-weight="700">采用与扩散</text><text x="705" y="284" font-size="21">培训、配套、资金</text><text x="705" y="322" font-size="21">合同与组织能力</text></g>
+<path d="M480 370V408" stroke="#242424" stroke-width="3"/>
+<rect x="40" y="430" width="425" height="160" rx="8" fill="#242424"/><text x="65" y="476" fill="#fff" font-size="25">让研发者有动力</text><text x="65" y="520" fill="#fff" font-size="22">一部分回报可以被保留</text><text x="65" y="560" fill="#fff" font-size="21">否则可能没人愿意先试错</text>
+<rect x="495" y="430" width="425" height="160" rx="8" fill="#fff" stroke="#eb6b32"/><text x="520" y="476" font-size="25">让社会能广泛使用</text><text x="520" y="520" font-size="22">传播、学习与后续改进</text><text x="520" y="560" font-size="21">过度排他也可能抬高成本</text>
+<text x="40" y="641" font-size="24">共享有外溢，采用有成本，保护与传播需要权衡。</text><text x="40" y="683" font-size="19">制度与发展相互影响；不能仅凭相关性判定单向因果。</text></g></svg>

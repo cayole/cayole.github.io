@@ -78,6 +78,8 @@ src/content/posts/macroeconomics/macroeconomics-01-introduction.md
 
 劳动力、通胀与中期主题提供 `labour-count`、`wage-price`、`expectations-lab`、`price-level`、`medium-run`、`deflation-lab` 代码块，对应 `src/components/labour/`。数值与内容回归检查运行 `node --test tests/labour-models.test.mjs tests/labour-content.test.mjs`（Node.js 22.18+，使用原生 TypeScript 类型擦除）。
 
+长期增长与技术就业主题提供 `compound-growth`、`purchasing-power`、`capital-accumulation`、`golden-rule`、`balanced-growth`、`growth-accounting`、`productivity-jobs`、`productivity-wages` 代码块，对应 `src/components/growth/`，复用现有滑块、结果和手动播放控件。数值、边界与内容检查运行 `node --test tests/growth-models.test.mjs tests/growth-content.test.mjs`。这些例子使用虚构数据与明确的简化条件，不是现实增长或就业预测。
+
 ## 图片
 
 将图片放入 `public/images/`：

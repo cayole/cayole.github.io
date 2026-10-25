@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 710" role="img" aria-labelledby="title desc">
+<title id="title">生产率与工资预期一起变化，还是错开变化</title><desc id="desc">价格预期正确，加成10%，工资设定F等于1.03减2u。实际和预期效率一致时相容失业率6.05%，实际工资随效率提高；实际1.1但预期1.2时条件交点为9.83%。</desc>
+<rect width="960" height="710" fill="#f6f1e8"/><g font-family="sans-serif" fill="#242424"><rect x="40" y="38" width="80" height="8" fill="#eb6b32"/><text x="40" y="97" font-size="34" font-weight="700">工资要求与定价能力，是否同一步？</text><text x="40" y="140" font-size="22">假设价格预期正确、加成率 10%；u 以小数代入</text>
+<rect x="40" y="180" width="880" height="100" rx="8" fill="#242424"/><text x="65" y="221" fill="#fff" font-size="24">工资要求 WS：W/P = Aᵉ × (1.03 − 2u)</text><text x="65" y="259" fill="#fff" font-size="24">企业定价 PS：W/P = A / 1.1</text>
+<g font-size="22"><text x="55" y="330">情景</text><text x="390" y="330">A / Aᵉ</text><text x="570" y="330">实际工资</text><text x="750" y="330">交点失业率</text>
+<path d="M40 350H920M40 414H920M40 478H920M40 542H920M40 606H920" stroke="#cfc8bc"/>
+<text x="55" y="393">原来一致</text><text x="390" y="393">1 / 1</text><text x="570" y="393">0.9091</text><text x="770" y="393">6.05%</text>
+<text x="55" y="457">提高，预期跟上</text><text x="390" y="457">1.2 / 1.2</text><text x="570" y="457" fill="#b44213">1.0909</text><text x="770" y="457">6.05%</text>
+<text x="55" y="521">低于预期路径</text><text x="390" y="521">1.1 / 1.2</text><text x="570" y="521">1</text><text x="770" y="521" fill="#b44213">9.83%</text>
+<text x="55" y="585">预期随后修正</text><text x="390" y="585">1.1 / 1.1</text><text x="570" y="585">1</text><text x="770" y="585">6.05%</text></g>
+<text x="40" y="651" font-size="22">A = Aᵉ 时效率从两边约去；错开时，条件交点可以改变。</text><text x="40" y="689" font-size="18">静态条件比较，不代表失业自动跳到交点；相容位置不是福利最优。</text></g></svg>
