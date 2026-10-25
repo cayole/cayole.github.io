@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="650" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+<title id="title">少了四十位失业者，两条不同的路</title><desc id="desc">起点就业七百、失业一百、劳动力外两百。四十人就业后失业率为百分之七点五；四十人停止求职后失业率约百分之七点八九，就业仍为七百。</desc>
+<rect width="960" height="650" fill="#f8f7f3"/><g font-family="Microsoft YaHei, sans-serif" fill="#171714">
+<text x="48" y="58" font-size="18" fill="#b9341f">河湾镇 · 招聘启事之后</text><text x="48" y="110" font-size="34" font-weight="700">报表里少了 40 人，街上多了工作吗？</text>
+<rect x="48" y="145" width="864" height="92" fill="#efede5"/><text x="72" y="181" font-size="23">起点：就业 700 ｜ 失业 100 ｜ 劳动力外 200</text><text x="72" y="217" font-size="21">劳动力 800；失业率 100 / 800 = 12.50%</text>
+<path d="M275 250V280M685 250V280" stroke="#b9341f" stroke-width="3"/><path d="m267 272 8 8 8-8m394 0 8 8 8-8" fill="none" stroke="#b9341f" stroke-width="3"/>
+<rect x="48" y="295" width="410" height="235" fill="#efede5" stroke="#cbc8bd"/><rect x="502" y="295" width="410" height="235" fill="#efede5" stroke="#cbc8bd"/>
+<text x="72" y="340" font-size="27" font-weight="700">40 人找到工作</text><text x="526" y="340" font-size="27" font-weight="700">40 人停止求职</text>
+<text x="72" y="387" font-size="22">就业 740，失业 60</text><text x="526" y="387" font-size="22">就业仍 700，失业 60</text>
+<text x="72" y="427" font-size="22">劳动力仍为 800</text><text x="526" y="427" font-size="22">劳动力缩至 760</text>
+<text x="72" y="480" font-size="29" fill="#b9341f">失业率 7.50%</text><text x="526" y="480" font-size="29" fill="#b9341f">失业率约 7.89%</text>
+<text x="48" y="579" font-size="26" font-weight="700">一起看失业率、参与率与就业人口比。</text><text x="48" y="618" font-size="18" fill="#66645d">固定 1,000 位劳动年龄居民的简化分类。退出求职不等于已经找到工作。</text></g></svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="710" viewBox="0 0 960 710" role="img" aria-labelledby="title desc">
+<title id="title">供给条件变了，原来的正常生产可能变成过热</title><desc id="desc">能源成本冲击的教学假设令潜在产出从九百四十降到九百，最初产出仍为九百四十时出现四十的正缺口，通胀增加两个百分点。提高实际利率至百分之五后，产出九百，通胀不再加速。</desc>
+<rect width="960" height="710" fill="#f8f7f3"/><g font-family="Microsoft YaHei, sans-serif" fill="#171714">
+<text x="48" y="65" font-size="34" font-weight="700">价签在涨，未必是顾客突然买得更多。</text><text x="48" y="111" font-size="22" fill="#66645d">能源冲击的简化实验：暂固定 IS，只改变相容的供给条件。</text>
+<g fill="#efede5" stroke="#cbc8bd"><rect x="48" y="155" width="270" height="315"/><rect x="345" y="155" width="270" height="315"/><rect x="642" y="155" width="270" height="315"/></g>
+<g font-size="26" font-weight="700"><text x="70" y="201">冲击之前</text><text x="367" y="201">成本冲击之后</text><text x="664" y="201">政策调整之后</text></g>
+<g font-size="22"><text x="70" y="253">实际利率 3%</text><text x="367" y="253">实际利率仍 3%</text><text x="664" y="253">实际利率 5%</text><text x="70" y="301">当前产出 940</text><text x="367" y="301">当前产出仍 940</text><text x="664" y="301">当前产出 900</text><text x="70" y="349">潜在产出 940</text><text x="367" y="349">潜在产出降至 900</text><text x="664" y="349">潜在产出仍 900</text></g>
+<g font-size="25" fill="#b9341f"><text x="70" y="419">通胀变化 0</text><text x="367" y="419">通胀变化 +2 点</text><text x="664" y="419">通胀变化 0</text></g>
+<text x="48" y="533" font-size="26" font-weight="700">消除新缺口，不等于修复已经受损的生产条件。</text><text x="48" y="582" font-size="23">预期追随上期时，回到新潜在水平只会停止通胀加速。</text><text x="48" y="634" font-size="18" fill="#66645d">潜在产出降幅为独立假设，不是由真实油价涨幅推算。通胀变化单位为百分点。</text><text x="48" y="670" font-size="18" fill="#66645d">现实能源冲击也会影响 IS、生产率与预期，因此最初产出不变仅是这里的分析条件。</text></g></svg>

@@ -285,3 +285,5 @@ $$
 上一站：[一台烤箱、两只政策旋钮](#/post/macroeconomics-03-is-lm)
 
 从头逛起：[一笔修路款，怎样让整条街热闹起来？](#/post/macroeconomics-01-goods-market)
+
+下一站：[老周贴出招聘启事，街上为什么还有人找不到工作？](#/post/macroeconomics-05-labour-market)

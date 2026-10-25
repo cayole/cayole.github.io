@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="710" viewBox="0 0 960 710" role="img" aria-labelledby="title desc">
+<title id="title">同样低失业，两种预期给出不同通胀路径</title><desc id="desc">自然失业率百分之六、实际失业率百分之四、敏感度零点五，每期额外压力为一个百分点。固定百分之二预期给出百分之三通胀；追随上期则依次为百分之三、四、五。</desc>
+<rect width="960" height="710" fill="#f8f7f3"/><g font-family="Microsoft YaHei, sans-serif" fill="#171714">
+<text x="48" y="64" font-size="34" font-weight="700">不是同一张永久有效的“通胀菜单”。</text><text x="48" y="109" font-size="22">u = 4%，uₙ = 6%，α = 0.5 → 每期额外压力 +1 个百分点</text>
+<rect x="48" y="150" width="864" height="180" fill="#efede5"/><text x="75" y="197" font-size="27" font-weight="700">每期都锚定在 2% 预期</text>
+<text x="75" y="253" font-size="23">第 1 期：2 + 1</text><text x="352" y="253" font-size="23">第 2 期：2 + 1</text><text x="630" y="253" font-size="23">第 3 期：2 + 1</text>
+<text x="135" y="306" font-size="33" fill="#b9341f">3%</text><text x="412" y="306" font-size="33" fill="#b9341f">3%</text><text x="690" y="306" font-size="33" fill="#b9341f">3%</text>
+<rect x="48" y="355" width="864" height="180" fill="#efede5"/><text x="75" y="402" font-size="27" font-weight="700">把上期实际涨幅写进下一期预期</text>
+<text x="75" y="458" font-size="23">第 1 期：2 + 1</text><text x="352" y="458" font-size="23">第 2 期：3 + 1</text><text x="630" y="458" font-size="23">第 3 期：4 + 1</text>
+<text x="135" y="511" font-size="33" fill="#b9341f">3%</text><text x="412" y="511" font-size="33" fill="#b9341f">4%</text><text x="690" y="511" font-size="33" fill="#b9341f">5%</text>
+<path d="M205 501H330m-12-8 12 8-12 8M482 501H607m-12-8 12 8-12 8" stroke="#b9341f" stroke-width="3" fill="none"/>
+<text x="48" y="596" font-size="26" font-weight="700">回到 uₙ，只消除额外压力，不一定把通胀降回 2%。</text><text x="48" y="647" font-size="20" fill="#66645d">比较的是两条预设预期规则；实际预期可能调整、失锚，关系也会受供给冲击影响。</text><text x="48" y="680" font-size="18" fill="#66645d">π = πᵉ − 0.5(u − 6%)，率按百分数，失业率差与额外压力按百分点。</text></g></svg>

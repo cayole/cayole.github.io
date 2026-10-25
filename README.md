@@ -76,6 +76,8 @@ src/content/posts/macroeconomics/macroeconomics-01-introduction.md
 
 金融主题另提供 `bond-price`、`money-market`、`investment-lab`、`is-lm-lab`、`real-rate`、`bank-capital`、`credit-wedge` 代码块。对应模型和控件位于 `src/components/finance/`，用途见 [文章制作标准](ARTICLE_STANDARDS.md)。
 
+劳动力、通胀与中期主题提供 `labour-count`、`wage-price`、`expectations-lab`、`price-level`、`medium-run`、`deflation-lab` 代码块，对应 `src/components/labour/`。数值与内容回归检查运行 `node --test tests/labour-models.test.mjs tests/labour-content.test.mjs`（Node.js 22.18+，使用原生 TypeScript 类型擦除）。
+
 ## 图片
 
 将图片放入 `public/images/`：

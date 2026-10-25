@@ -1,14 +1,11 @@
 import type { Post } from '../types'
+import { byNewest } from './post-order'
 
 const markdownFiles = import.meta.glob('../content/posts/**/*.md', {
   query: '?raw',
   import: 'default',
   eager: true,
 }) as Record<string, string>
-
-function byNewest(a: Post, b: Post) {
-  return new Date(b.date).getTime() - new Date(a.date).getTime()
-}
 
 function parseFrontmatter(source: string) {
   const normalized = source.replace(/\r\n/g, '\n')

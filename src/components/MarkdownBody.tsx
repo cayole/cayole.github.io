@@ -11,6 +11,9 @@ import { TownDemandDemo } from './TownDemandDemo'
 import { BondLab, MoneyMarketLab } from './finance/MoneyLabs'
 import { InvestmentLab, ISLMLab } from './finance/PolicyLabs'
 import { BankCapitalLab, CreditWedgeLab, RealRateLab } from './finance/RiskLabs'
+import { LabourCountLab, WagePriceLab } from './labour/LabourLabs'
+import { ExpectationsLab, PriceLevelLab } from './labour/InflationLabs'
+import { DeflationLab, MediumRunLab } from './labour/MediumRunLabs'
 
 const financeLabs = {
   'bond-price': BondLab,
@@ -20,6 +23,12 @@ const financeLabs = {
   'real-rate': RealRateLab,
   'bank-capital': BankCapitalLab,
   'credit-wedge': CreditWedgeLab,
+  'labour-count': LabourCountLab,
+  'wage-price': WagePriceLab,
+  'expectations-lab': ExpectationsLab,
+  'price-level': PriceLevelLab,
+  'medium-run': MediumRunLab,
+  'deflation-lab': DeflationLab,
 }
 
 interface MarkdownBodyProps {

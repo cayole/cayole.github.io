@@ -1,0 +1,17 @@
+.labour-census { display: grid; gap: .75rem; margin: 1rem 0; }
+.labour-census > div { padding: .75rem; border: 1px solid var(--line-light); }
+.labour-census strong { font-size: .85rem; }
+.labour-census > div > span { float: right; font-family: var(--mono); }
+.labour-person-track { clear: both; height: .7rem; margin-top: .6rem; background: var(--paper-deep); }
+.labour-person-track > span { display: block; height: 100%; background: var(--accent); }
+.labour-path-summary { border-left: 3px solid var(--accent); background: var(--paper); padding: 1rem; margin: 1rem 0; }
+.labour-path-summary strong { display: block; }
+.labour-period-list { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; list-style: none; }
+.labour-period-list li { border: 1px solid var(--line-light); padding: .35rem .6rem; font-size: .75rem; }
+.labour-period-list li[aria-current="step"] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+.labour-rate-bars { display: grid; gap: .75rem; }
+.labour-rate-bars > div { display: grid; grid-template-columns: 5rem minmax(0, 1fr) 4rem; align-items: center; gap: .5rem; font-size: .8rem; }
+.labour-rate-bars .track { height: 1rem; background: var(--paper-deep); }
+.labour-rate-bars .fill { display: block; height: 100%; background: var(--accent); }
+.labour-chart-title { font-size: .8rem; }
+@media (max-width: 480px) { .labour-rate-bars > div { grid-template-columns: 3.5rem minmax(0,1fr) 3.5rem; } }

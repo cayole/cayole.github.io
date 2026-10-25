@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="730" viewBox="0 0 960 730" role="img" aria-labelledby="title desc">
+<title id="title">订单、就业与通胀的三只仪表</title><desc id="desc">当前实际利率通过需求决定产出，产出与潜在产出之差对应失业缺口，再对应通胀变化，央行的政策反应可以反馈到利率。示例中产出九百六十对应失业率百分之四，通胀每期增加一个百分点。</desc>
+<rect width="960" height="730" fill="#f8f7f3"/><g font-family="Microsoft YaHei, sans-serif" fill="#171714">
+<text x="48" y="65" font-size="35" font-weight="700">从订单表，走到招聘栏，再走到价签。</text><text x="48" y="110" font-size="22" fill="#66645d">一条机制链，不是一张现实预测表。</text>
+<g fill="#efede5" stroke="#cbc8bd"><rect x="48" y="155" width="864" height="110"/><rect x="48" y="310" width="864" height="110"/><rect x="48" y="465" width="864" height="110"/></g>
+<g font-size="26" font-weight="700"><text x="75" y="195">IS + 水平 LM：当前需求</text><text x="75" y="350">就业桥梁：Y = 1,000(1 − u)</text><text x="75" y="505">PC：通胀变化 = 0.05(Y − Yₙ)</text></g>
+<g font-size="23"><text x="75" y="237">实际利率 2% → 产出 960；正常潜在水平 940</text><text x="75" y="392">产出 960 → 失业率 4%；相容失业率 6%</text><text x="75" y="547">正缺口 20 → 通胀每步增加 1 个百分点</text></g>
+<path d="M480 270V303m-9-12 9 12 9-12M480 425V458m-9-12 9 12 9-12" stroke="#b9341f" stroke-width="3" fill="none"/>
+<text x="48" y="633" font-size="25" fill="#b9341f">政策回应可以反过来改变需求；不回应，反馈未必消失。</text><text x="48" y="681" font-size="18" fill="#66645d">固定 L=1,000、A=1、自然失业率 6%；预期等于上期通胀，信用利差为零。</text><text x="48" y="711" font-size="18" fill="#66645d">本篇另行校准金额与产出单位，不沿用早期文章中产出 850 的数值标尺。</text></g></svg>

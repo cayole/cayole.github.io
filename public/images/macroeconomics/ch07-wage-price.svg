@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="650" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+<title id="title">工资金额一起变大，不代表购买力增加</title><desc id="desc">在只有劳动、生产率为一、加成为百分之十的模型中，工资从一百增到一百一十时，价格从一百一十增到一百二十一，实际工资仍为零点九零九一。</desc>
+<rect width="960" height="650" fill="#f8f7f3"/><g font-family="Microsoft YaHei, sans-serif" fill="#171714">
+<text x="48" y="65" font-size="34" font-weight="700">工资单变大，能买到的也一定变多吗？</text><text x="48" y="108" font-size="22" fill="#66645d">先固定生产率 A = 1、成本加成 m = 10%，只看同比例变化。</text>
+<rect x="48" y="155" width="370" height="260" fill="#efede5" stroke="#cbc8bd"/><rect x="542" y="155" width="370" height="260" fill="#efede5" stroke="#cbc8bd"/>
+<text x="75" y="204" font-size="26" font-weight="700">原来的两张单据</text><text x="75" y="260" font-size="25">名义工资 W = 100</text><text x="75" y="309" font-size="25">价格水平 P = 110</text><text x="75" y="369" font-size="27" fill="#b9341f">W / P ≈ 0.9091</text>
+<path d="M440 285H518m-12-9 12 9-12 9" stroke="#b9341f" stroke-width="3" fill="none"/><text x="445" y="252" font-size="19">+10%</text>
+<text x="569" y="204" font-size="26" font-weight="700">两者都上调之后</text><text x="569" y="260" font-size="25">名义工资 W = 110</text><text x="569" y="309" font-size="25">价格水平 P = 121</text><text x="569" y="369" font-size="27" fill="#b9341f">W / P ≈ 0.9091</text>
+<text x="48" y="475" font-size="27" font-weight="700">实际工资由比例决定，不由工资单的位数决定。</text><text x="48" y="527" font-size="24">若保留生产率：单位劳动成本 = W / A</text><text x="48" y="570" font-size="24">价格设定所对应的实际工资 = A / (1 + m)</text><text x="48" y="618" font-size="18" fill="#66645d">教学经济的整体价格与工资，不是单家面包店的全部成本，也不是实际涨价预测。</text></g></svg>

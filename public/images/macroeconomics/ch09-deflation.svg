@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="710" viewBox="0 0 960 710" role="img" aria-labelledby="title desc">
+<title id="title">零名义利率处的通缩反馈</title><desc id="desc">需求不足推动通胀下降，若预期随通缩下修，在名义利率零的约束下实际利率上升，需求进一步减少。预期锚定可以削弱反馈，但不会自动补上需求缺口。</desc>
+<rect width="960" height="710" fill="#f8f7f3"/><g font-family="Microsoft YaHei, sans-serif" fill="#171714">
+<text x="48" y="65" font-size="35" font-weight="700">名义利率停在零，实际利率却可能上升。</text><text x="48" y="111" font-size="23" fill="#66645d">近似关系 r = i − 预期通胀；以下为有条件的反馈示意。</text>
+<g fill="#efede5" stroke="#cbc8bd"><rect x="48" y="175" width="390" height="130"/><rect x="522" y="175" width="390" height="130"/><rect x="522" y="395" width="390" height="130"/><rect x="48" y="395" width="390" height="130"/></g>
+<g font-size="27" font-weight="700"><text x="75" y="225">需求不足，产出偏低</text><text x="549" y="225">通胀下行，出现通缩</text><text x="549" y="445">下一期预期跟着下修</text><text x="75" y="445">实际利率升高</text></g>
+<g font-size="21"><text x="75" y="273">闲置与失业缺口压低价格压力</text><text x="549" y="273">不是只有“涨价变慢”这一种</text><text x="549" y="493">人们预计未来的钱更值钱</text><text x="75" y="493">投资和需求进一步承压</text></g>
+<path d="M446 240H510m-12-9 12 9-12 9M717 315V382m-9-12 9 12 9-12M510 460H450m12-9-12 9 12 9M243 382V317m-9 12 9-12 9 12" stroke="#b9341f" stroke-width="3" fill="none"/>
+<text x="48" y="593" font-size="25" fill="#b9341f">锚定预期可打断放大，但不会凭空补足原先的需求损失。</text><text x="48" y="646" font-size="18" fill="#66645d">教学中采用零名义利率下限与追随上期的预期；不是现实必然结局。</text><text x="48" y="680" font-size="18" fill="#66645d">财政、金融修复及其他政策可能改变过程；这里没有把负反馈外推成无限预测。</text></g></svg>

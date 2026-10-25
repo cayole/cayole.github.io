@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="630" viewBox="0 0 960 630" role="img" aria-labelledby="title desc">
+<title id="title">涨得慢了，不等于价格降了</title><desc id="desc">价格指数从一百依次上涨百分之六、四、二，达到一百零六、一百一十点二四和一百一十二点四四。各期涨幅降低，但价格水平继续提高。</desc>
+<rect width="960" height="630" fill="#f8f7f3"/><g font-family="Microsoft YaHei, sans-serif" fill="#171714">
+<text x="48" y="65" font-size="35" font-weight="700">通胀在减速，价签还在往上走。</text><text x="48" y="112" font-size="23" fill="#66645d">固定篮子，起点 100；每期都在上一期的价签上乘以涨幅。</text>
+<g fill="#efede5" stroke="#cbc8bd"><rect x="48" y="166" width="190" height="240"/><rect x="272" y="166" width="190" height="240"/><rect x="496" y="166" width="190" height="240"/><rect x="720" y="166" width="192" height="240"/></g>
+<g font-size="23"><text x="75" y="211">起点</text><text x="299" y="211">第一期</text><text x="523" y="211">第二期</text><text x="747" y="211">第三期</text></g>
+<g font-size="31" font-weight="700"><text x="75" y="285">100.00</text><text x="299" y="285">106.00</text><text x="523" y="285">110.24</text><text x="747" y="285">112.44</text></g>
+<g font-size="25" fill="#b9341f"><text x="75" y="354">尚未涨价</text><text x="299" y="354">+6%</text><text x="523" y="354">+4%</text><text x="747" y="354">+2%</text></g>
+<text x="48" y="469" font-size="26" font-weight="700">从 6% 降到 2%，是涨幅减少 4 个百分点。</text><text x="48" y="517" font-size="24">不是价格下降 4%，也不是回到原来的 100。</text><text x="48" y="580" font-size="18" fill="#66645d">教学数值：100 × 1.06 × 1.04 × 1.02 = 112.4448。价格按两位小数展示。</text></g></svg>
